@@ -1,3 +1,4 @@
-# wo-heroes
 ![alt text](https://i.imgur.com/7PQcSez.png)
-Created using the Wild Ones, Private Wars files
+
+
+Create your OWN server of Wild Ones without having too much knowledge!
