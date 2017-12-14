@@ -1,0 +1,70 @@
+{
+"version":"v0.635",
+
+"assetFiles":[
+	"weaponicons.swf?v=000",
+	"weaponicons1.swf?v=008",
+	"weaponicons2.swf?v=008",
+	"weaponicons3.swf?v=008",
+	"avatar4.swf?v=[cdnVersion]",
+	"foodicons.swf?v=[cdnVersion]",
+	"avatars.swf?v=000",
+	"avatars1.swf?v=001",
+	"avatar3.swf?v=001",
+	"sounds.swf?v=000",
+	"sounds1.swf?v=[cdnVersion]",
+	"accessories.swf?v=[cdnVersion]",
+	"accessories1.swf?v=002",
+	"accessories2.swf?v=007",
+	"weaponicons5.swf?v=008"
+],
+
+"assetFiles2":[
+	"ambient.swf?v=000",
+	"ambient1.swf?v=000",
+	"weaponicons4.swf?v=008"
+],
+
+"dailyNeighborBonus":{
+	"resetTime":24,
+	"bonus":[
+		{"p":0.50, "reward":{"gold":10,"xp":10}},
+		{"p":0.50, "reward":{"grenade":1}}
+	]
+},
+
+"dailyFriendBonus":{
+    "resetTime":24,
+    "bonus":[
+        {"p":1.0, "reward":{"gold":2,"xp":2}}
+    ]
+},
+
+"dailyReturnBonus":{
+	"bonus":[
+		{"text":"25 gold and 25 xp", "reward":{"gold":25,"xp":25}},
+		{"text":"100 gold and 100 xp", "reward":{"gold":100,"xp":100}},
+		{"text":"a free prize wheel spin", "reward":{"prize_wheel":1}},
+		{"text":"a free laser cannon", "reward":{"lasercannon":1}}
+	]
+},
+
+"chanceWheel":{
+	"cost":2,
+	"currency":"treats",
+	"prize":[
+		{"p":0.09, "slots":1, "reward":{"teleport":4} },
+		{"p":0.25, "slots":3, "reward":{"grappling":2} },
+		{"p":0.09, "slots":1, "reward":{"grenade":2} },
+		{"p":0.01, "slots":1, "reward":{"grenade":50}, "special":"true"},
+		{"p":0.01, "slots":1, "reward":{"flamethrower":3} },
+		{"p":0.01, "slots":1, "reward":{"goo":3} },
+		{"p":0.1, "slots":2, "reward":{"mirv":1} },
+		{"p":0.05, "slots":1, "reward":{"drill":1} },
+		{"p":0.05, "slots":1, "reward":{"lasercannon":1}, "special":"true"}
+	]
+},
+
+"fbCreditsPerTreat":3
+
+}

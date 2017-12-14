@@ -1,0 +1,439 @@
+[
+{	 
+	"xp":0,
+	"map":[ "Sink or Swim" 				
+			,"Kennel No Gradient"
+			,"Creepy Crawly"
+			,"Critter Falls"	
+			,"Swamp"
+			,"Hot and Spicy"
+			,"Haunted Mansion"
+			,"Crash Landing"	
+			,"Kennel"
+			,"Lab Rats"				
+			,"Ice Bridges"			
+			,"Tower Tops"				
+			,"Bonsai"					
+			,"Hamster Cage Match"		
+			,"Bunker"					
+			,"Glacier"				
+			,"Haunted Pinball"		
+			,"Pachinko Peril"			
+			],
+	"weapon":["walk", "bone", "superjump", "climb", "punch", "dig", "mortar"],
+	"chassis":["dog"]
+},
+{
+	"xp":2,
+	"weapon":["grenade","teleport", "spiderstrike"],
+	"bonus":{"treats":5}
+},
+{
+	"xp":97,
+	"chassis": ["rabbit"],
+	"weapon":["lasercannon"],
+	"bonus":{"grenade":2, "teleport":5, "treats":1}
+},
+{
+	"xp":283,
+	"bonus":{"grenade":2, "teleport":5}
+},
+{	 
+	"xp":562,
+	"bonus":{"grenade":2, "teleport":5, "treats":1}
+},
+{	 
+	"xp":841,
+	"weapon":["flamethrower"],
+	"bonus":{"grenade":2, "teleport":5}
+},
+{	 
+	"xp":1213,
+	"bonus":{"flamethrower":1, "grenade":2, "teleport":5, "treats":1}
+},
+{	 
+	"xp":1585,
+	"weapon":["babynuke", "earthquake", "meganuke", "airstrike", "goostrike", "drillstrike", "healthEquipA"],
+	"bonus":{"flamethrower":1, "grenade":2, "teleport":5}
+},
+{	 
+	"xp":2050,
+	"bonus":{"flamethrower":1, "grenade":2, "teleport":5, "treats":1}
+},
+{	 
+	"xp":2515,
+	"weapon":["grappling", "banana"],
+	"bonus":{"flamethrower":1, "grenade":2, "teleport":5}
+},
+{	 
+	"xp":2980,
+	"bonus":{"flamethrower":1, "grenade":2, "teleport":5, "grappling":1, "treats":1}
+},
+{	 
+	"xp":3445,
+	"bonus":{"flamethrower":1, "grenade":2, "teleport":5, "grappling":1, "treats":1}
+},
+{	 
+	"xp":4003,
+	"weapon":["goo"],
+	"bonus":{"flamethrower":1, "grenade":2, "teleport":5, "grappling":1}
+},
+{	 
+	"xp":4561,
+	"bonus":{"flamethrower":1, "goo":1, "grenade":2, "teleport":5, "grappling":1, "treats":1}
+},
+{	 
+	"xp":5119,
+	"chassis":["panda"],
+	"bonus":{"flamethrower":1, "goo":1, "grenade":2, "teleport":5, "grappling":1}
+},
+{	 
+	"xp":5677,
+	"bonus":{"flamethrower":1, "goo":1, "grenade":2, "teleport":5, "grappling":1, "treats":1}
+},
+{	 
+	"xp":6328,
+	"bonus":{"flamethrower":1, "goo":1, "grenade":2, "teleport":5, "grappling":1, "treats":1}
+},
+{	 
+	"xp":6979,
+	"weapon":["clustermissile", "clustergrenade", "drillcluster", "blunderbuss", "pumpkin", "candy_corn_mirv", "razor_apple", "cranberry", "antigravmissile"],
+	"bonus":{"flamethrower":1, "goo":1, "grenade":2, "teleport":5, "grappling":1}
+},
+{	 
+	"xp":7630,
+	"bonus":{"flamethrower":1, "goo":1, "grenade":2, "teleport":5, "grappling":1, "treats":1}
+},
+{	 
+	"xp":8281,
+	"bonus":{"flamethrower":1, "goo":1, "grenade":2, "teleport":5, "grappling":1, "treats":1}
+},
+{	 
+	"xp":9025,
+	"chassis":["monkey"],
+	"bonus":{"flamethrower":1, "goo":1, "grenade":2, "teleport":5, "grappling":1}
+},
+{	 
+	"xp":9769,
+	"chassis":["armadillo"],
+	"bonus":{"flamethrower":1, "goo":1, "grenade":2, "teleport":5, "grappling":1, "treats":1}
+},
+{	 
+	"xp":10513,
+	"bonus":{"flamethrower":1, "goo":1, "grenade":2, "teleport":5, "grappling":1, "treats":1}
+},
+{	 
+	"xp":11257,
+	"weapon":["mirv", "blackbeauty", "heartdynamite"],
+	"bonus":{"flamethrower":1, "goo":1, "grenade":2, "teleport":5, "grappling":1}
+},
+{	 
+	"xp":12094,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "grenade":2, "teleport":5, "grappling":1, "treats":1}
+},
+{	 
+	"xp":12931,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "grenade":2, "teleport":5, "grappling":1, "treats":1}
+},
+{	 
+	"xp":13768,
+	"weapon":["drill"],
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "grenade":2, "teleport":5, "grappling":1}
+},
+{	 
+	"xp":14605,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1, "treats":1}
+},
+{	 
+	"xp":15535,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1, "treats":1}
+},
+{	 
+	"xp":16465,
+	"chassis":["bat"],
+	"weapon":["rubbermirv", "eggsblaster", "bazooka"],
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1}
+},
+{	 
+	"xp":17395,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1, "treats":1}
+},
+{	 
+	"xp":18325,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1}
+},
+{	 
+	"xp":19441,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1, "treats":1}
+},
+{	 
+	"xp":20557,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1}
+},
+{	 
+	"xp":21673,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1}
+},
+{	 
+	"xp":22789,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1, "treats":1}
+},
+{	 
+	"xp":24091,
+	"weapon":["gooshotKI1"],
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1}
+},
+{	 
+	"xp":25393,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1, "treats":1}
+},
+{	 
+	"xp":26695,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1}
+},
+{	 
+	"xp":27997,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1, "treats":1}
+},
+{	 
+	"xp":29485,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1},
+	"chassis":["squirrel"]
+},
+{	 
+	"xp":30973,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1, "treats":1}
+},
+{	 
+	"xp":32461,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1}
+},
+{	 
+	"xp":33949,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1, "treats":1}
+},
+{	 
+	"xp":35623,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1}
+},
+{	 
+	"xp":37297,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1, "treats":1}
+},
+{	 
+	"xp":38971,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1}
+},
+{	 
+	"xp":40645,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1, "treats":1}
+},
+{	 
+	"xp":42505,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1}
+},
+{	 
+	"xp":44365,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1, "treats":1}
+},
+{	 
+	"xp":46225,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1}
+},
+{	 
+	"xp":48085,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1, "treats":1}
+},
+{	 
+	"xp":50131,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1}
+},
+{	 
+	"xp":52177,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1, "treats":1}
+},
+{	 
+	"xp":54223,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1}
+},
+{	 
+	"xp":56269,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1, "treats":1}
+},
+{	 
+	"xp":58501,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1}
+},
+{	 
+	"xp":60733,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1, "treats":1}
+},
+{	 
+	"xp":62965,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1}
+},
+{	 
+	"xp":65197,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1, "treats":1}
+},
+{	 
+	"xp":67522,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1}
+},
+{	 
+	"xp":69847,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1, "treats":1}
+},
+{	 
+	"xp":72172,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1}
+},
+{	 
+	"xp":74497,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1, "treats":1}
+},
+{	
+	"xp":76822,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1}
+},
+{	 
+	"xp":79240,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1, "treats":1}
+},
+{	 
+	"xp":81658,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1}
+},
+{	 
+	"xp":84076,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1, "treats":1}
+},
+{	 
+	"xp":86494,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1}
+},
+{	 
+	"xp":88912,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1, "treats":1}
+},
+{	 
+	"xp":91330,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1}
+},
+{	 
+	"xp":93841,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1, "treats":1}
+},
+{	 
+	"xp":96352,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1}
+},
+{	 
+	"xp":98863,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1, "treats":1}
+},
+{	 
+	"xp":101374,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1}
+},
+{	 
+	"xp":103885,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1, "treats":1}
+},
+{	 
+	"xp":106396,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1}
+},
+{	 
+	"xp":108907,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1, "treats":1}
+},
+{	 
+	"xp":111511,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1}
+},
+{	 
+	"xp":114115,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1, "treats":1}
+},
+{	 
+	"xp":116719,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1}
+},
+{	 
+	"xp":119323,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1, "treats":1}
+},
+{	 
+	"xp":121927,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1}
+},
+{	 
+	"xp":124531,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1, "treats":1}
+},
+{	 
+	"xp":127135,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1}
+},
+{	 
+	"xp":129739,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1, "treats":1}
+},
+{	 
+	"xp":132436,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1}
+},
+{	 
+	"xp":135133,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1, "treats":1}
+},
+{	 
+	"xp":137830,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1}
+},
+{	 
+	"xp":140527,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1, "treats":1}
+},
+{	 
+	"xp":143224,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1}
+},
+{	 
+	"xp":145921,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1, "treats":1}
+},
+{	 
+	"xp":148618,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1}
+},
+{	 
+	"xp":151315,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1, "treats":1}
+},
+{	 
+	"xp":154012,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1}
+},
+{	 
+	"xp":156709,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1, "treats":1}
+},
+{	 
+	"xp":159406,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1}
+},
+{	 
+	"xp":162103,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1, "treats":1}
+},
+{	 
+	"xp":164800,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1}
+},
+{	 
+	"xp":167497,
+	"bonus":{"flamethrower":1, "goo":1, "mirv":1, "drill":1, "grenade":2, "teleport":5, "grappling":1, "treats":1}
+}
+]

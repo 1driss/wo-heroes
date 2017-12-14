@@ -1,0 +1,11 @@
+[
+	{"type":"lasercannon", "num":1, "prob":0.5},
+	{"type":"gameovernuke", "num":1, "prob":0.5},
+	{"type":"grappling", "num":1, "prob":20},
+	{"type":"mirv", "num":1, "prob":25},	
+	{"type":"goo", "num":1, "prob":10},
+	{"type":"flamethrower", "num":1, "prob":10},
+	{"type":"drill", "num":1, "prob":5},
+	{"type":"teleport", "num":1, "prob":20},
+	{"type":"treats", "num":1, "prob":20}
+]
