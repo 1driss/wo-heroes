@@ -8,4 +8,4 @@ Creating your OWN server of Wild Ones (without having too much knowledge) is now
 
 # Tutorial
 
-<p><a href="http://www.fastswf.com/1R-uVQM">Youtube link.</a></p>
+<p><a href="http://www.fastswf.com/1R-uVQM">Click here. (Youtube Video)h</a></p>
