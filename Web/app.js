@@ -68,7 +68,7 @@ app.post('/quotes', (req, res) => {
 // mongo
 var db
 
-MongoClient.connect('mongodb://154.127.52.139:25546/emu', (err, database) => {
+MongoClient.connect('mongodb://localhost:25546/emu', (err, database) => {
   if (err) return console.log(err)
  db = database
 })
