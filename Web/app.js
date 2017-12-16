@@ -35,7 +35,7 @@ app.use(bodyParser.urlencoded({extended: true}))
 
     collection.findOne({dname:dname, snum:snum}, function(err, user) {
         // si encuentra un usuario entra al juego
-        if (user) return res.send('<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10.0.0.0" width="100%" height="100%"> <param name="movie" value="http://wildheroes.pw/gamewo.swf?snum=' + snum + '&dname=' + dname + '&net=M"/><param name="quality" value="high" /><PARAM NAME="SCALE" VALUE="exactfit"><embed src="http://wildheroes.pw/gamewo.swf?dname=' + dname + '&snum=' + snum + '&net=M" quality="high" type="application/x-shockwave-flash" width="100%" height="100%" SCALE="exactfit" pluginspage="http://www.macromedia.com/go/getflashplayer" /></object>');
+        if (user) return res.send('<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10.0.0.0" width="100%" height="100%"> <param name="movie" value="http://localhost:80/gamewo.swf?snum=' + snum + '&dname=' + dname + '&net=M"/><param name="quality" value="high" /><PARAM NAME="SCALE" VALUE="exactfit"><embed src="http://localhost:80/gamewo.swf?dname=' + dname + '&snum=' + snum + '&net=M" quality="high" type="application/x-shockwave-flash" width="100%" height="100%" SCALE="exactfit" pluginspage="http://www.macromedia.com/go/getflashplayer" /></object>');
     // si no lo hace, envia a notregistered.html, donde se dice que esa cuenta no existe
           if (err) return res.send(500, err);
           res.sendFile(__dirname + '/notregistered.html')
@@ -44,7 +44,7 @@ app.use(bodyParser.urlencoded({extended: true}))
 });
 
 
-//index.html en el puerto 3000
+//index.html en el puerto 80
 
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/web/index.html')
@@ -58,7 +58,7 @@ app.listen(80, function () {
   console.log('| |   | |')
   console.log('|_|   |_|')
   console.log('')
-  console.log('ExpressJS. (port 3000)')
+  console.log('ExpressJS. (port 80)')
 })
 
 app.post('/quotes', (req, res) => {
@@ -68,7 +68,7 @@ app.post('/quotes', (req, res) => {
 // mongo
 var db
 
-MongoClient.connect('mongodb://localhost:25546/emu', (err, database) => {
+MongoClient.connect('mongodb://localhost:27017/emu', (err, database) => {
   if (err) return console.log(err)
  db = database
 })
