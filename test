@@ -1,0 +1,221 @@
+package com.playdom.ballistics.lobby
+{
+   import com.playdom.ballistics.shared.ButtonSelection;
+   import com.playdom.ballistics.shop.ShopMapModel;
+   import com.playdom.ballistics.shop.ShopModel;
+   import flash.display.MovieClip;
+   import flash.display.SimpleButton;
+   import flash.display.Sprite;
+   import flash.events.Event;
+   import flash.events.MouseEvent;
+   import flash.text.TextField;
+   import flash.text.TextFormat;
+   
+   public class CreateGame extends MovieClip
+   {
+       
+      
+      public var checkMark:Sprite;
+      
+      public var nameChecking:Sprite;
+      
+      private var currentMapModel:ShopMapModel;
+      
+      private var _nameState:int = 2;
+      
+      private var conveyor:LobbyMapsConveyor;
+      
+      private var textEntry:TextField;
+      
+      public var createButton:SimpleButton;
+      
+      public var tTurn:ButtonSelection;
+      
+      public var closeButton:SimpleButton;
+      
+      public var exclamationMark:Sprite;
+      
+      private var disabledFilter:Array;
+      
+      private var stateText:TextField;
+      
+      public var multiplayerRightArrowButton:SimpleButton;
+      
+      public var multiplayerLeftArrowButton:SimpleButton;
+      
+      public var nameOK:Sprite;
+      
+      private var lastEntry:String = "";
+      
+      private var tDisaster:ButtonSelection;
+      
+      private var mapNameTF:TextField;
+      
+      public var nameTaken:Sprite;
+      
+      private var nameCheck:Object;
+      
+      public function CreateGame()
+      {
+         nameCheck = {};
+         super();
+         disabledFilter = [DrawUtil.getMonochromeFilter()];
+         tDisaster = new ButtonSelection(["1","4","8"],[1,4,8]);
+         tTurn = new ButtonSelection(["10","15","20"],[10,15,20]);
+         tDisaster.x = 131;
+         tDisaster.y = 275;
+         tTurn.x = 8;
+         tTurn.y = 275;
+         addChild(tDisaster);
+         addChild(tTurn);
+         tDisaster.value = 4;
+         tTurn.value = 20;
+         createMap();
+         textEntry = new TextField();
+         textEntry.defaultTextFormat = new TextFormat("Arial",10,0,false,false);
+         textEntry.maxChars = 100;
+         textEntry.type = "input";
+         textEntry.x = 38;
+         textEntry.y = 324;
+         textEntry.width = 200;
+         textEntry.height = 18;
+         textEntry.background = true;
+         textEntry.backgroundColor = 16777215;
+         addChild(textEntry);
+         closeButton.addEventListener(MouseEvent.MOUSE_DOWN,onClose,false,0,true);
+         createButton.addEventListener(MouseEvent.MOUSE_DOWN,onCreate,false,0,true);
+         nameState = 1;
+         addEventListener(Event.ENTER_FRAME,onFrame,false,0,true);
+      }
+      
+      private function createMap() : void
+      {
+         var myMapProperties:MapProperties = null;
+         var myShopModel:ShopMapModel = null;
+         var randomMapProperties:MapProperties = null;
+         var shopModel:ShopModel = ShopModel.getInstance();
+         var myMapArray:Array = shopModel.mapArray;
+         var mapArray:Array = new Array();
+         for(var i:int = 0; i < myMapArray.length; i++)
+         {
+            myMapProperties = myMapArray[i].mapProperties;
+            if(i == 0)
+            {
+               randomMapProperties = myMapProperties.clone();
+               randomMapProperties.name = "Any";
+               myShopModel = new ShopMapModel(randomMapProperties);
+               mapArray.push(myShopModel);
+            }
+            myShopModel = new ShopMapModel(myMapProperties);
+            mapArray.push(myShopModel);
+         }
+         conveyor = new LobbyMapsConveyor(mapArray,multiplayerLeftArrowButton,multiplayerRightArrowButton);
+         this.addEventListener(LobbyMapsConveyor.MAP_CLICKED,onMapClicked);
+         var myZIndex:int = this.getChildIndex(multiplayerLeftArrowButton);
+         addChildAt(conveyor,myZIndex);
+         conveyor.x = -32;
+         conveyor.y = 15;
+         mapNameTF = FontUtil.createLabel("",18,16777215,true,0,35,this,"font2");
+      }
+      
+      private function onMapClicked(event:Event) : void
+      {
+         event.stopImmediatePropagation();
+      }
+      
+      private function get nameState() : int
+      {
+         return _nameState;
+      }
+      
+      private function onCreate(evt:MouseEvent) : void
+      {
+         if(currentMapModel.isLocked && currentMapModel.title != "Any")
+         {
+            Ballistics.overlayView.alert = "sorry, this map is locked.";
+            return;
+         }
+         var cmd:Object = {
+            "command":"create_game",
+            "gameName":CommandProcessor.censorGameName(textEntry.text),
+            "mapName":currentMapModel.mapProperties.name,
+            "playerCount":6,
+            "gameDuration":Number(tDisaster.value) * 60,
+            "turnDuration":tTurn.value
+         };
+         Ballistics.lobbyConnection.sendCommand(cmd);
+         Ballistics.analysisLog("game_action",{
+            "action":"create_private_clicked",
+            "game_name":cmd.gameName,
+            "map_name":cmd.mapName,
+            "game_duration":cmd.gameDuration * 0.001
+         });
+      }
+      
+      public function onClose(evt:MouseEvent = null) : void
+      {
+         if(parent)
+         {
+            parent.removeChild(this);
+         }
+      }
+      
+      public function move(isLeft:Boolean) : void
+      {
+         conveyor.move(isLeft);
+      }
+      
+      public function setNameStatus(name:String, value:Boolean) : void
+      {
+         lastEntry = "";
+         nameCheck[CommandProcessor.censorGameName(name)] = !!value?1:-1;
+      }
+      
+      private function set nameState(value:int) : void
+      {
+         if(_nameState == value)
+         {
+            return;
+         }
+         _nameState = value;
+         var isAvailable:Boolean = value == 1;
+         var isChecking:Boolean = value == 0;
+         var isTaken:Boolean = value == -1;
+         checkMark.visible = isAvailable;
+         exclamationMark.visible = isTaken;
+         createButton.mouseEnabled = isAvailable;
+         createButton.filters = !!isAvailable?[]:disabledFilter;
+         nameOK.visible = isAvailable;
+         nameChecking.visible = isChecking;
+         nameTaken.visible = isTaken;
+      }
+      
+      private function onFrame(evt:Event) : void
+      {
+         var cmd:Object = null;
+         var gameName:String = textEntry.text;
+         if(gameName == "")
+         {
+            nameState = 1;
+            return;
+         }
+         if(!nameCheck.hasOwnProperty(CommandProcessor.censorGameName(gameName)))
+         {
+            nameCheck[CommandProcessor.censorGameName(gameName)] = 0;
+            cmd = {
+               "command":"game_name_check",
+               "name":CommandProcessor.censorGameName(gameName)
+            };
+            Ballistics.lobbyConnection.sendCommand(cmd);
+         }
+         nameState = nameCheck[CommandProcessor.censorGameName(gameName)];
+      }
+      
+      public function updateMapName(myModel:ShopMapModel) : void
+      {
+         currentMapModel = myModel;
+         mapNameTF.text = myModel.mapProperties.name;
+         mapNameTF.x = 215 - mapNameTF.width / 2;
+      }
+   }
+}
