@@ -18,5 +18,5 @@ Creating your OWN server of Wild Ones (without having too much knowledge) is now
 # Credits
 
 - @krutt (WO:PW emu and client) 
-- @1driss and delvin (WO:H development)
+- delvin and @1driss (WO:H development)
 - Patricio Alonso (2012 client weapons fix)
