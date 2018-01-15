@@ -20,3 +20,5 @@ Creating your OWN server of Wild Ones (without having too much knowledge) is now
 - @krutt (WO:PW emu and client) 
 - delvin and @1driss (WO:H development)
 - Patricio Alonso (2012 client weapons fix)
+- Ziverius (Haunted Mansion map design)
+- @1driss (Swamp map design, and Tower Tops *test* design)
